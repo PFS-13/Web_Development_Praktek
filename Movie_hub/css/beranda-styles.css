@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 20px;
+    background-color: #ff7912 !important;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-color: #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hero-content {
+    color: #ffffff;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+/* Carousel Styles */
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+/* reality Show Section Styles */
+.reality-show h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.horizontal-scroll {
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping of items */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+/* Image styling */
+.horizontal-scroll img {
+    width: 200px; /* Adjust image size */
+    height: auto;
+    margin-right: 15px; /* Spacing between images */
+    display: inline-block; /* Keeps images inline for horizontal scroll */
+}
+
+/* popular movies Section Styles */
+.popular-movies h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 30px; 
+    max-width: 600px;
+    margin-left: 100px;
+    /* margin: 0 auto; */
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+    color: #ffffff; 
+}
+.item h2{
+    font-size:medium;
+}
+
+.item p{
+    font-size: 10px;
+}
+
+.item img {
+    max-width: 500px;
+    max-height: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .carousel-item {
+        height: 300px; /* Atur tinggi tetap untuk item carousel pada perangkat mobile */
+    }
+}
