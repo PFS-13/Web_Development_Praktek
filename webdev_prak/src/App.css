@@ -1,0 +1,114 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  background-color: #343a40 !important;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar .nav-link {
+  color: #cfd8dc; /* Warna link default */
+  padding: 10px 15px; /* Tambahkan padding agar lebih besar */
+  display: block; /* Buat link menjadi block element */
+  text-decoration: none; /* Hapus garis bawah pada link */
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057; /* Ubah warna latar belakang saat hover */
+  color: white; /* Ubah warna teks saat hover */
+}
+
+.sidebar .nav-link.active {
+  background-color: #6c757d; /* Warna latar belakang untuk link yang aktif */
+  color: white; /* Warna teks untuk link yang aktif */
+}
+
+.sidebar button {
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  color: #cfd8dc;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar button:hover {
+  background-color: #495057;
+  color: white;
+}
+
+.sidebar button.active {
+  background-color: #6c757d;
+  color: white;
+}
+
+.sidebar .collapse-inner {
+  padding-left: 10px;
+}
+
+.sidebar .collapse-inner .nav-link {
+  padding: 8px 15px;
+  color: #cfd8dc;
+}
+
+.sidebar .collapse-inner .nav-link:hover {
+  background-color: #495057;
+}
+
+.sidebar .collapse {
+  max-height: 0;
+  opacity: 0; /* Kontrol visibilitas dengan opacity */
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.sidebar .collapse.show {
+  max-height: 500px;
+  opacity: 1; /* Set transparansi menjadi penuh saat dropdown terbuka */
+  transition: max-height 0.4s ease-in, opacity 0.4s ease-in;
+}
+
+/* CSS untuk ikon panah */
+.chevron-icon {
+  transition: transform 0.3s ease-in-out;
+  margin-right: 5px; /* Memberikan jarak antara panah dan teks */
+}
+
+.chevron-icon.rotate {
+  transform: rotate(90deg); /* Memutar panah saat dropdown terbuka */
+}
+
+.w-100 {
+  margin-left: 250px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Tambahkan padding kiri dan kanan */
+  background-color: #6a6e6e !important;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin-right: 20px; /* Jarak antara Admin dan tepi kanan */
+}
+
+.nav-link {
+  font-size: 18px;
+}
