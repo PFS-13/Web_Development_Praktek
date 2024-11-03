@@ -1,0 +1,16 @@
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .input-group-text {
+    background-color: #59595a;
+    color: white;
+  }
+  
+  .btn-sm {
+    width: 32px;
+    height: 32px;
+    display:inline-flex;
+    align-items: center;
+  }
+
