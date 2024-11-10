@@ -1,0 +1,57 @@
+/* Styling navbar-user */
+.navbar-user {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-user-item {
+  position: relative;
+  display: inline-block;
+  width: 49px;
+}
+
+
+.dropdown .option:hover {
+    background-color: gold;
+}
+
+.option {
+    font-size: 15px;
+}
+.navbar-user-link {
+  cursor: pointer;
+}
+
+.dropdown Link:hover {
+    background-color: gold;
+}
+
+/* Dropdown styling */
+.dropdown {
+  display: none;
+  position: fixed;
+  right: -40px;
+  margin-top: 10px;
+  background-color: white;
+  list-style-type: none;
+  padding: 0;
+  transition: opacity 0.3s ease; /* Animasi opacity */
+  pointer-events: none; /* Menghindari interaksi sebelum dropdown ditampilkan */
+}
+
+.dropdown a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.navbar-user-item:hover .dropdown {
+  display: block;
+  opacity: 1; /* Mengubah opacity menjadi terlihat */
+  pointer-events: auto; /* Mengizinkan interaksi setelah ditampilkan */
+}
