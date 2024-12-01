@@ -90,3 +90,34 @@ Untuk dapat menjalankan aplikasi anda dapat mengikuti langkah langkah dibawah:
 4. Buka terminal lain di VSCode lalu masukan perintah
    ```bash
    php artisan serve
+---
+## Struktur Folder
+```bash
+laravel-inertia-project/
+  ├── app/
+  ├── bootstrap/
+  ├── config/
+  ├── database/
+  ├── node_modules/
+  ├── public/
+  ├── resources/
+  ├── routes/
+  ├── storage/
+  ├── vendor/
+  ├── .editorconfig
+  ├── .env
+  ├── .env.example
+  ├── .gitattributes
+  ├── .gitignore
+  ├── artisan
+  ├── composer.json
+  ├── composer.lock
+  ├── jsconfig.json
+  ├── package-lock.json
+  ├── package.json
+  ├── phpunit.xml
+  ├── postcss.config.js
+  ├── README.md
+  ├── tailwind.config.js
+  └── vite.config.js
+  ```
