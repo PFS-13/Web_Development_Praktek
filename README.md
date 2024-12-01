@@ -38,3 +38,16 @@ Movie Hub adalah aplikasi website yang memungkinkan pengguna untuk menjelajahi d
 1. **Clone Repository:**
    ```bash
    git clone https://github.com/username/movie-hub.git
+2. **Buka Terminal di VSCode**
+3.  **Masuk Ke Folder Tempat File Disimpan**
+    ```bash
+    cd /tempat file disimpan
+4. **Install Node.js (versi : 10.8.3)**
+   download node.js di google chrome menggunakan browser anda dan pilih yang versi v20.18.2, setelah itu install node.js tersebut.
+   link tutorial : [link](https://www.geeksforgeeks.org/install-node-js-on-windows/)
+   cek apakah node.js sudah terinstall atau belum di terminal dengan cara
+   ```bash
+   npm -v
+5. **Install Composer**
+   
+7. **Install Laravel**
