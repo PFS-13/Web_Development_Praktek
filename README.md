@@ -38,16 +38,55 @@ Movie Hub adalah aplikasi website yang memungkinkan pengguna untuk menjelajahi d
 1. **Clone Repository:**
    ```bash
    git clone https://github.com/username/movie-hub.git
-2. **Buka Terminal di VSCode**
-3.  **Masuk Ke Folder Tempat File Disimpan**
+2. **Buka File di VSCode**
+3. **Buka Terminal di VSCode**
+4. **Masuk Ke Folder Tempat File Disimpan**
     ```bash
     cd /tempat file disimpan
-4. **Install Node.js (versi : 10.8.3)**
-   download node.js di google chrome menggunakan browser anda dan pilih yang versi v20.18.2, setelah itu install node.js tersebut.
-   link tutorial : [link](https://www.geeksforgeeks.org/install-node-js-on-windows/)
-   cek apakah node.js sudah terinstall atau belum di terminal dengan cara
+5. **Install Node.js (versi : 10.8.3)**  
+   Download node.js di google chrome menggunakan browser anda dan pilih yang versi v20.18.2, setelah itu install node.js tersebut.Lalu cek apakah node.js sudah terinstall atau belum di terminal dengan cara:
+   - link tutorial : [Link](https://www.geeksforgeeks.org/install-node-js-on-windows/)
    ```bash
    npm -v
-5. **Install Composer**
-   
-7. **Install Laravel**
+6. **Install Composer**  
+   Note: Untuk menginstall Composer anda harus menginstall PHP minimum versi 8.2 terlebih dahulu. jika anda belum menginstall php sebelumnya anda dapat mengikuti tutorial di link ini [Link](https://webhostmu.com/cara-install-xampp/).  
+   Install Composer dengan melalui terminal dengan cara:
+   ```bash
+   composer install
+7. **Salin File `.env.example` Menjadi `.env`:**
+     ```bash
+     cp .env.example .env
+     ```
+8. **Atur Konfigurasi Database di File `.env`:**
+     ```env
+     DB_CONNECTION=pgsql
+     DB_HOST=127.0.0.1
+     DB_PORT=5432
+     DB_DATABASE=Movie_DB
+     DB_USERNAME=postgres
+     DB_PASSWORD=yourpassword
+     ```
+9. **Generate Key Aplikasi:**
+     ```bash
+     php artisan key:generate
+     ```
+10. **Jalankan Migrasi Untuk Membuat Tabel:**
+     ```bash
+     php artisan migrate
+     ```
+11. **Install Laravel Breeze**
+    Install laravel Breeze untuk fitur login dengan cara
+    ```bash
+    composer require laravel/breeze --dev
+    php artisan breeze:install
+---
+## Menjalankan Aplikasi
+Untuk dapat menjalankan aplikasi anda dapat mengikuti langkah langkah dibawah:
+1. Buka Postgresql lalu buat dataBase dengan nama Movie_DB
+2. Masukan dataset ke database
+3. Buka Terminal di VSCode lalu masukan perintah
+   ```bash
+   npm run dev  
+4. Buka terminal lain di VSCode lalu masukan perintah
+   ```bash
+   php artisan serve
