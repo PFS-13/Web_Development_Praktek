@@ -1,0 +1,19 @@
+.actor-photo {
+    width: 130px;
+
+    height: 150px;
+}
+
+.form-title { 
+    text-align: center;
+    color: black;
+}
+
+.col-action {
+    width: 15%;
+}
+
+.poster-photo {
+    width: 130px;
+    height: 200px;
+}

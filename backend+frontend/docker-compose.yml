@@ -1,0 +1,38 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel_react_app
+    volumes:
+      - .:/var/www
+    ports:
+      - "8000:8000"
+      - "5173:5173"  
+    depends_on:
+      - db
+    environment:
+      APP_ENV: local
+      APP_DEBUG: true
+      APP_KEY: base64:2rIv0PWpdxr/4a/4XSoLNa77u9wODFxMZM0WVW5CF8M=
+      DB_CONNECTION: pgsql
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_DATABASE: movies-hub
+      DB_USERNAME: postgres
+      DB_PASSWORD: admin
+
+  db:
+    image: postgres:17
+    container_name: postgres_db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: movies-hub
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
